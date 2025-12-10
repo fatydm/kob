@@ -1,0 +1,48 @@
+[
+    {
+        "id" : 1,
+        "image" : "https://i.pinimg.com/736x/cf/d4/20/cfd4201e06b77df0bc9a5cc18753001b.jpg",
+        "type" : "Key of Glamour"
+    },
+    {
+        "id" : 2,
+        "image" : "https://i.pinimg.com/1200x/ff/06/20/ff0620efa12a480c0f0e0a6571353f56.jpg",
+        "type" : "Key of Glamour"
+    },
+    {
+        "id" : 3,
+        "image" : "https://i.pinimg.com/1200x/25/12/49/251249421a203561c52d42c892a53721.jpg",
+        "type" : "Key of Glamour"
+    },
+    {
+        "id" : 4,
+        "image" : "https://i.pinimg.com/1200x/4f/4c/d9/4f4cd91b984fc4b9bf8aa2f3e203de96.jpg",
+        "type" : "Key of Sophistication"
+    },
+    {
+        "id" : 5,
+        "image" : "https://i.pinimg.com/1200x/6e/f2/97/6ef297f5ead5ebfae8e80ce48aa7c4db.jpg",
+        "type" : "Key of Sophistication"
+    },
+    {
+        "id" : 6, 
+        "image" : "https://i.pinimg.com/1200x/d9/12/9a/d9129a710cf5df79515ed0b69f8ee422.jpg",
+        "type" :"Key of Sophistication"
+    },
+    {
+        "id" : 7, 
+        "image" : "https://i.pinimg.com/1200x/e7/e9/9c/e7e99c4a2ad55af932c2d1b8135ef76d.jpg",
+        "type" : "Key of Natural Beauty"
+    },
+    {
+        "id" : 8,
+        "image" : "https://i.pinimg.com/1200x/89/5d/6a/895d6a31e8d2adfd8bd099be75a28bd9.jpg",
+        "type" : "Key of Natural Beauty"
+    },
+    {
+        "id" : 9,
+        "image" : "https://i.pinimg.com/1200x/0e/79/9b/0e799b23cf3eae9a323107370f5c8219.jpg",
+        "type" : "Key of Natural Beauty"
+    }
+]
+
