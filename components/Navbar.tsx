@@ -19,13 +19,13 @@ export default function Navbar({ items }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-[var(--navbarground)] shadow-md z-40">
+    <nav className="fixed w-full bg-(--navbarground) shadow-md z-40">
       <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
         <Image
-          src="/assets/kob.png"
+          src="/assets/kobnav.png"
           alt="logo"
-          width={70}
-          height={70}
+          width={80}
+          height={80}
           priority
           className="cursor-pointer"
         />
@@ -36,17 +36,17 @@ export default function Navbar({ items }: NavbarProps) {
           aria-label="Menu"
         >
           <span
-            className={`w-6 h-0.5 bg-black transition-all duration-300 ${
+            className={`w-8 h-1 bg-(--accent) transition-all duration-300 ${
               isOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`w-6 h-0.5 bg-black transition-all duration-300 ${
+            className={`w-8 h-1 bg-(--accent) transition-all duration-300 ${
               isOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`w-6 h-0.5 bg-black transition-all duration-300 ${
+            className={`w-8 h-1 bg-(--accent) transition-all duration-300 ${
               isOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
@@ -58,12 +58,12 @@ export default function Navbar({ items }: NavbarProps) {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col items-center gap-6 py-6 bg-[var(--navbar)] border-t border-gray-200">
+        <div className="flex flex-col items-center gap-6 py-6 bg-(--navbarground) border-t-2 border-gray-200">
           {items.map((item, index) => (
             <NavbarLink
               key={index}
               {...item}
-              classes="text-lg font-medium hover:text-[var(--secondback)] transition-colors"
+              classes="text-xl font-large hover:text-(--secondback) transition-colors"
               onClick={() => setIsOpen(false)}
             />
           ))}

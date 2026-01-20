@@ -29,8 +29,8 @@ export default function NavbarLink({
         text-sm uppercase tracking-wide
         transition-all duration-300
         ${isActive
-          ? "text-[var(--navbartextactive)] font-extrabold underline"
-          : "text-[var(--main-color)] "}
+          ? "text-(--navbartextactive) font-extrabold underline"
+          : "text-(--main-color)"}
         hover:text-[#953012] hover:scale-110
         ${classes}
       `}
