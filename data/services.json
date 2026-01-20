@@ -1,0 +1,33 @@
+[
+    {
+        "id" : 1,
+        "type" : "Key Of Natural Beauty",
+        "description" : "Uniformiser et illuminer le teint tout en gardant votre aspect naturel "
+    },
+    {
+        "id" : 2,
+        "type" : "Key Of Glam",
+        "description" : "Travailler le teint et sublimer le regard"
+    },
+     {
+        "id" : 3,
+        "type" : "Key Of Sophistication",
+        "description" : "Travail des yeux - cut crease"
+    },
+    {
+        "id" : 4,
+        "type" : "Key Artistic",
+        "description" : "Pour shooting"
+    },
+    {
+        "id" : 5,
+        "type" : "Bridal Key Touch",
+        "description" : "Maquillage mariée"
+    },
+    {
+        "id" : 6,
+        "type" : "Key of transmission",
+        "description" : "Formation d'auto maquillage"
+    }
+
+]
