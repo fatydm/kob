@@ -1,17 +1,68 @@
-import pictures from "@/data.json";
 
-export default function Gallery() {
+"use client";
+
+import { useState } from "react";
+import pictures from "@/data/pictures.json";
+import Carousel from "@/components/Carroussel";
+
+type GalleryItem = {
+  id: number;
+  image: string;
+  type: string;
+};
+
+type GalleryProps = {
+  /** Nombre max d’images à afficher (ex: Home) */
+  limit?: number;
+
+  /** Active ou non le carrousel au clic */
+  clickable?: boolean;
+};
+
+export default function Gallery({
+  limit,
+  clickable = true,
+}: GalleryProps) {
+  const dataToShow = limit ? pictures.slice(0, limit) : pictures;
+
+  const images = pictures.map((item) => item.image);
+
+  const [open, setOpen] = useState(false);
+  const [startIndex, setStartIndex] = useState(0);
+
   return (
-    <main className="flex flex-col items-center justify-between py-15 px-5">
-      <h2 className="text-3xl font-semibold tracking-tight text-black uppercase">La Galerie</h2>
-      <div className="flex flex-row justify-center flex-wrap gap-6 mt-5 py-5 shadow-[0_0_10px_rgba(176,141,115,0.6)] ">
-        {pictures.map((item) => (
-          <img className="object-cover rounded-md border-2" 
-          key={item.id} 
-          src={item.image} 
-          alt={item.type} width={200} />
+    <main className="flex flex-col items-center py-5 bg-[var(--firstback)] rounded-xl">
+      <h1>
+        Nos prestations
+      </h1>
+
+      <div className="flex flex-wrap justify-center gap-6 mt-6  p-6 rounded-xl shadow-[0_0_10px_rgba(176,141,115,0.6)]">
+        {dataToShow.map((item, index) => (
+          <img
+            key={item.id}
+            src={item.image}
+            alt={item.type}
+            className={`
+              w-[200px] h-[200px]
+              object-cover rounded-md border-2
+              ${clickable ? "cursor-pointer hover:scale-105 transition" : ""}
+            `}
+            onClick={() => {
+              if (!clickable) return;
+              setStartIndex(index);
+              setOpen(true);
+            }}
+          />
         ))}
       </div>
+
+      {clickable && open && (
+        <Carousel
+          images={images}
+          startIndex={startIndex}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </main>
   );
 }
