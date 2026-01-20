@@ -30,7 +30,7 @@ export default function NavbarLink({
         transition-all duration-300
         ${isActive
           ? "text-[var(--navbartextactive)] font-extrabold underline"
-          : "text-black"}
+          : "text-[var(--main-color)] "}
         hover:text-[#953012] hover:scale-110
         ${classes}
       `}
