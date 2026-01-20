@@ -2,47 +2,122 @@
     {
         "id" : 1,
         "image" : "https://i.pinimg.com/736x/cf/d4/20/cfd4201e06b77df0bc9a5cc18753001b.jpg",
-        "type" : "Key of Glamour"
+        "type" : "glamour"
     },
     {
         "id" : 2,
         "image" : "https://i.pinimg.com/1200x/ff/06/20/ff0620efa12a480c0f0e0a6571353f56.jpg",
-        "type" : "Key of Glamour"
+        "type" : "glamour"
     },
     {
         "id" : 3,
         "image" : "https://i.pinimg.com/1200x/25/12/49/251249421a203561c52d42c892a53721.jpg",
-        "type" : "Key of Glamour"
+        "type" : "glamour"
     },
     {
         "id" : 4,
         "image" : "https://i.pinimg.com/1200x/4f/4c/d9/4f4cd91b984fc4b9bf8aa2f3e203de96.jpg",
-        "type" : "Key of Sophistication"
+        "type" : "sophisticated"
     },
     {
         "id" : 5,
         "image" : "https://i.pinimg.com/1200x/6e/f2/97/6ef297f5ead5ebfae8e80ce48aa7c4db.jpg",
-        "type" : "Key of Sophistication"
+        "type" : "sophisticated"
     },
     {
         "id" : 6, 
         "image" : "https://i.pinimg.com/1200x/d9/12/9a/d9129a710cf5df79515ed0b69f8ee422.jpg",
-        "type" :"Key of Sophistication"
+        "type" : "sophisticated"
     },
     {
         "id" : 7, 
         "image" : "https://i.pinimg.com/1200x/e7/e9/9c/e7e99c4a2ad55af932c2d1b8135ef76d.jpg",
-        "type" : "Key of Natural Beauty"
+        "type" : "natural"
     },
     {
         "id" : 8,
         "image" : "https://i.pinimg.com/1200x/89/5d/6a/895d6a31e8d2adfd8bd099be75a28bd9.jpg",
-        "type" : "Key of Natural Beauty"
+        "type" : "natural"
     },
-    {
+     {
         "id" : 9,
         "image" : "https://i.pinimg.com/1200x/0e/79/9b/0e799b23cf3eae9a323107370f5c8219.jpg",
-        "type" : "Key of Natural Beauty"
+        "type" : "natural"
+    },
+    {
+        "id": 10,
+        "image": "https://i.pinimg.com/736x/44/b3/6a/44b36add0276c54a11e4570062c93ff9.jpg",
+        "type": "artistic"
+    },
+    {
+        "id": 11,
+        "image": "https://i.pinimg.com/736x/f6/47/d4/f647d4f8542f760dd1c9deed77a72c4d.jpg",
+        "type": "glamour"
+    },
+    {
+        "id": 12,
+        "image": "https://i.pinimg.com/736x/4b/60/2d/4b602da94d0a900f7d0ad33f552dd1f8.jpg",
+        "type": "glamour"
+    },
+    {
+        "id": 13,
+        "image": "https://i.pinimg.com/736x/f7/12/9b/f7129b0bf9c76aec603ff1d6d860a820.jpg",
+        "type": "glamour"
+    },
+    {
+        "id": 14,
+        "image": "https://i.pinimg.com/736x/0c/7f/10/0c7f10382b353120e161723ed5c71e84.jpg",
+        "type": "sophisticated"
+    },
+    {
+        "id": 15,
+        "image": "https://i.pinimg.com/564x/1f/b9/97/1fb99713c08387bdf1ab7805c62d5540.jpg",
+        "type": "artistic"
+    },
+    {
+        "id": 16,
+        "image": "https://i.pinimg.com/736x/95/f5/1c/95f51c339941498a4527cbc4775f6c14.jpg",
+        "type": "artistic"
+    },
+     {
+        "id": 17,
+        "image": "https://i.pinimg.com/736x/24/dd/cf/24ddcfb35b71329d4c7023cbd7aab309.jpg",
+        "type": "artistic"
+    },
+     {
+        "id": 18,
+        "image": "https://i.pinimg.com/736x/05/c2/ff/05c2ffcacebb9b925f49b1a4919d22c0.jpg",
+        "type": "natural"
+    },
+     {
+        "id": 19,
+        "image": "https://i.pinimg.com/736x/bd/f8/2c/bdf82ce29167e25ce3b2b2a4de1fe3b7.jpg",
+        "type": "natural"
+    },
+     {
+        "id": 20,
+        "image": "https://i.pinimg.com/736x/ef/4b/fb/ef4bfbc1df3abf2c3c23f91d21a2b18f.jpg",
+        "type": "natural"
+    },
+    {
+        "id": 21,
+        "image": "https://i.pinimg.com/1200x/41/2b/f3/412bf3aae14486fef6edcfaf0936685e.jpg",
+        "type": "sophisticated"
+    },
+    {
+        "id": 22,
+        "image": "https://i.pinimg.com/736x/a3/79/6e/a3796e4425d7039f5054a2ce50f61ab3.jpg",
+        "type": "sophisticated"
+    },
+    {
+        "id": 23,
+        "image": "https://i.pinimg.com/736x/8e/e0/42/8ee0422cabdfdf8b22148355d3d5ad83.jpg",
+        "type": "artistic"
+    },
+    {
+        "id": 24,
+        "image": "https://i.pinimg.com/1200x/03/8c/34/038c34c5608f2ffaf0b043510af3f77e.jpg",
+        "type": "artistic"
     }
 ]
 

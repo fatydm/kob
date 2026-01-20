@@ -1,33 +1,42 @@
 [
     {
         "id" : 1,
-        "type" : "Key Of Natural Beauty",
-        "description" : "Uniformiser et illuminer le teint tout en gardant votre aspect naturel "
+        "name": "Key Of Natural Beauty",
+        "type": "natural",
+        "description" : "Uniformiser et illuminer le teint tout en gardant votre aspect naturel",
+        "time": "Entre 30min et 45min",
+        "image": "https://i.pinimg.com/1200x/0e/79/9b/0e799b23cf3eae9a323107370f5c8219.jpg"
     },
     {
         "id" : 2,
-        "type" : "Key Of Glam",
-        "description" : "Travailler le teint et sublimer le regard"
+        "name": "Key Of Glam",
+        "type": "glamour",
+        "description" : "Travailler le teint et sublimer le regard",
+        "time": "Entre 45min et 1h",
+        "image": "/assets/946450E2-7C7C-4A10-90B8-E27A15C49B3A.jpg"
     },
      {
         "id" : 3,
-        "type" : "Key Of Sophistication",
-        "description" : "Travail des yeux - cut crease"
+        "name": "Key Of Sophistication",
+        "type": "sophisticated",
+        "description" : "Travail des yeux renforcé -type cut crease- / contouring",
+        "time": "Entre 1h et 1h20",
+        "image": "https://i.pinimg.com/736x/0c/7f/10/0c7f10382b353120e161723ed5c71e84.jpg"
     },
     {
         "id" : 4,
-        "type" : "Key Artistic",
-        "description" : "Pour shooting"
+        "name": "Key Artistic",
+        "type": "artistic",
+        "description" : "Pour shooting",
+        "time": "Varie en fonction du modèle",
+        "image": "https://i.pinimg.com/736x/24/dd/cf/24ddcfb35b71329d4c7023cbd7aab309.jpg"
     },
     {
         "id" : 5,
-        "type" : "Bridal Key Touch",
-        "description" : "Maquillage mariée"
-    },
-    {
-        "id" : 6,
-        "type" : "Key of transmission",
-        "description" : "Formation d'auto maquillage"
+        "name": "Bridal Key Touch",
+        "type": "bridal",
+        "description" : "Maquillage mariée",
+        "time": "Minimum 2h",
+        "image": "https://i.pinimg.com/736x/55/34/09/553409f33c9b89367c30402ecb676e3e.jpg"
     }
-
 ]
