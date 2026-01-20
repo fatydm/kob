@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Geist, Geist_Mono, Modak } from "next/font/google";
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+import "../globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +34,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar
+          items={[
+            { href: "/", label: "Accueil" },
+            { href: "/gallery", label: "Galerie" },
+            { href: "/services", label: "Services" },
+            { href: "/appointment", label: "Rendez-vous" },
+          ]}
+        />
         {children}
+        <Footer />
       </body>
     </html>
   );
