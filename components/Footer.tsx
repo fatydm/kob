@@ -18,7 +18,7 @@ export default function Footer() {
     { url: "/", label: "FAQs" }]
 
   return (
-    <footer className="bg-[var(--navbarground)] p-7 flex flex-col md:flex-row md:justify-around gap-5 md:gap-8 text-[var(--foreground)]">
+    <footer className="bg-(--navbarground) p-7 flex flex-col md:flex-row md:justify-around gap-5 md:gap-8 text-(--foreground)">
       <div className="flex flex-col">
         <h3 className="mb-3 uppercase font-semibold">Suivez-vous sur nos réseaux</h3>
           <ul className="flex gap-3 flex-wrap">
@@ -50,12 +50,12 @@ export default function Footer() {
             // onClick={() => onsubmit}
             type="submit"
             classes="
-              bg-[var(--accent)] text-white
+              bg-(--accent) text-white
               font-semibold px-4 py-2
               transition-all duration-500
               hover:shadow-[0_0_15px_rgba(155,127,165,0.5)]
               hover:scale-[1.03]
-              hover:border hover:border-[var(--gold)]
+              hover:border hover:border-(--gold)
               whitespace-nowrap"/>
         </div>
       </div>
