@@ -25,10 +25,10 @@ export default function ContactForm() {
       <section className="w-full max-w-3xl mt-20">
         
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-light tracking-wide text-[var(--accent)] uppercase mb-6">
+          <h1 className="text-4xl md:text-5xl font-light tracking-wide text-(--accent) uppercase mb-6">
             Contactez-nous
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[var(--accent)] to-transparent mx-auto mb-6"/>
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-(--accent) to-transparent mx-auto mb-6"/>
             <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
               Vous êtes intéressé·e par les formations de <span className="font-semibold">KEY OF BEAUTY</span> ?<br />
               Vous avez une question nous concernant ou vous souhaitez un renseignement ? 
@@ -76,7 +76,7 @@ export default function ContactForm() {
               onChange={(e) => setFormData({ ...formData, demande: e.target.value })}
               className="w-full bg-transparent border-b-2 border-gray-300 px-2 py-3 
                          text-gray-800
-                         focus:outline-none focus:border-[var(--secondback)] 
+                         focus:outline-none focus:border-(--secondback)
                          transition-colors duration-300
                          cursor-pointer"
             >
@@ -96,7 +96,7 @@ export default function ContactForm() {
               rows={6}
               className="w-full bg-transparent border-b-2 border-gray-300 px-2 py-3 
                          text-gray-800 placeholder-gray-400
-                         focus:outline-none focus:border-[var(--secondback)] 
+                         focus:outline-none focus:border-(--secondback) 
                          transition-colors duration-300 resize-none"
             />
           </div>
@@ -116,7 +116,7 @@ export default function ContactForm() {
           </div>
         </form>
 
-        <div className="w-16 h-1 bg-[var(--secondback)] mx-auto mt-12 opacity-30"></div>
+        <div className="w-16 h-1 bg-(--secondback) mx-auto mt-12 opacity-30"></div>
       </section>
     </main>
   );
