@@ -1,0 +1,14 @@
+[
+    {
+        "id" : 1,
+        "name": "Better yourself",
+        "type" : "auto-makeup",
+        "description" : "Formation d'auto maquillage."
+    },
+    {
+        "id" : 2,
+        "name": "Be more professionnal",
+        "type" : "auto-makeup",
+        "description" : "Formation d'auto maquillage"
+    }
+]
