@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
-import servicesData from "@/data/services.json"
+import servicesData from "@/data/services.json";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 
 type Service = {
   id: number;
@@ -11,10 +13,12 @@ type Service = {
   description: string;
   time: string;
   image: string;
+  calendlyUrl: string;
 };
 
 interface ServiceCardProps {
   service: Service;
+  onSelect: (service: Service) => void;
 }
 
 const services = servicesData as Service[];
@@ -27,86 +31,101 @@ const typeColors = {
   bridal: 'text-pink-700'
 };
 
-function ServiceCard({ service }: ServiceCardProps) {
+function ServiceCard({ service, onSelect }: ServiceCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
-
+  const router = useRouter();
+  
   return (
     <div 
-      className="group h-[500px] [perspective:1000px] cursor-pointer"
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
+      className="group h-[500px] [perspective:1000px]"
       onClick={() => setIsFlipped(!isFlipped)}
     >
-      <div className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
-        
-        {/* Front of card */}
-        <div className="absolute w-full h-full [backface-visibility:hidden] bg-(--secondback) rounded-2xl shadow-xl overflow-hidden">
-          <div className="relative h-64 w-full">
+      <div
+        className={`relative w-full h-full rounded-xl shadow-[0_0_15px_rgba(176,141,115,0.9)]
+        transition-transform duration-700 [transform-style:preserve-3d]
+        ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+      >
+
+        {/* FRONT */}
+        <div className="absolute w-full h-full [backface-visibility:hidden] bg-(--secondback) rounded-2xl overflow-hidden">
+          <div className="relative h-66 w-full overflow-hidden">
             <Image
               src={service.image}
               alt={service.name}
               fill
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
-          
+
           <div className="p-6 flex flex-col justify-between h-[calc(100%-16rem)]">
-            <div>
-              <span className={`text-2xl uppercase tracking-wider font-semibold ${typeColors[service.type]}`}>
-                {/* {service.type} */}
-              </span>
-              <h2 className={`text-2xl font-semibold text-gray-900 mt-5 mb-4 font-serif uppercase ${typeColors[service.type]}`}>
-                {/* {service.name} */}
-                Make up {service.type}
-
-              </h2>
-            </div>
-            
-            <div className="flex items-center gap-2 text-gray-600 mt-auto">
-              <span className="text-xl">⏱</span>
-              <span>{service.time}</span>
-            </div>
-            
-            <div className="text-xs text-gray-700 text-right mt-2">
-              Survolez pour plus d'infos
-            </div>
-          </div>
-        </div>
-
-        {/* Back of card */}
-        <div className="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-(--firstback) rounded-2xl shadow-xl overflow-hidden">
-          <div className="flex flex-col justify-center items-center h-full p-10 text-(--accent)">
-            <h2 className="text-3xl mb-8 font-serif text-center uppercase font-bold">
+            <h2 className={`text-2xl font-serif uppercase mt-5 mb-4 ${typeColors[service.type]}`}>
               {service.name}
             </h2>
-            
-            <p className="text-2xl italic text-center leading-relaxed mb-8">
-              {service.description}
-            </p>
-            
-            <div className="border-t border-white/30 pt-6 mt-6">
-              <div className="flex items-center gap-2 text-lg">
-                <span>⏱</span>
-                <span>{service.time}</span>
-              </div>
+
+            <div className="flex items-center gap-2 text-gray-600">
+              <span>⏱</span>
+              <span>{service.time}</span>
             </div>
+
+            <p className="text-xs text-right mt-4 text-gray-600 italic">
+              Cliquez pour plus d’infos
+            </p>
           </div>
         </div>
+
+        {/* BACK */}
+        <div className="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-(--firstback) rounded-2xl">
+          <div className="flex flex-col justify-center items-center h-full p-10 text-(--accent)">
+            <h3 className="text-3xl font-serif uppercase mb-6">
+              {service.type}
+            </h3>
+
+            <p className="text-xl italic text-center mb-8">
+              {service.description}
+            </p>
+
+            <a
+              href={service.calendlyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-(--accent) text-white rounded-full hover:opacity-90 transition"
+            >
+              Prendre rendez-vous
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   );
 }
 
 export default function Services() {
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br ">
+    <div className="min-h-screen">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 p-4">
-            {services.map((service) => (
-                <ServiceCard key={service.id} service={service} />
-            ))}
+          {services.map(service => (
+            <ServiceCard
+              key={service.id}
+              service={service}
+              onSelect={setSelectedService}
+            />
+          ))}
         </div>
       </div>
+
+      {selectedService && (
+        <div className="mt-20 max-w-5xl mx-auto p-4">
+          <h2 className="text-3xl text-center mb-8 font-serif uppercase">
+            Prendre rendez-vous – {selectedService.name}
+          </h2>
+
+          <CalendlyEmbed calendlyUrl={selectedService.calendlyUrl} />
+        </div>
+      )}
     </div>
   );
 }
