@@ -3,40 +3,45 @@
         "id" : 1,
         "name": "Key Of Natural Beauty",
         "type": "natural",
-        "description" : "Uniformiser et illuminer le teint tout en gardant votre aspect naturel",
+        "description" : "Un maquillage frais et lumineux qui unifie le teint, corrige les petites imperfections et révèle votre beauté naturelle. Idéal pour un rendu discret, élégant et sans effet 'trop maquillé'.",
         "time": "Entre 30min et 45min",
-        "image": "https://i.pinimg.com/1200x/0e/79/9b/0e799b23cf3eae9a323107370f5c8219.jpg"
+        "image": "https://i.pinimg.com/1200x/0e/79/9b/0e799b23cf3eae9a323107370f5c8219.jpg",
+        "calendlyUrl": "https://calendly.com/keyofbeauuty/30min"
     },
     {
         "id" : 2,
-        "name": "Key Of Glam",
+        "name": "Key of glamour",
         "type": "glamour",
-        "description" : "Travailler le teint et sublimer le regard",
+        "description" : "Un teint parfaitement travaillé et lumineux, associé à un regard intensifié et séduisant. Ce maquillage met en valeur vos traits avec élégance pour un effet chic et captivant.",
         "time": "Entre 45min et 1h",
-        "image": "/assets/946450E2-7C7C-4A10-90B8-E27A15C49B3A.jpg"
+        "image": "/assets/946450E2-7C7C-4A10-90B8-E27A15C49B3A.jpg",
+        "calendlyUrl": "https://calendly.com/keyofbeauuty/key-of-glamour"
     },
      {
         "id" : 3,
-        "name": "Key Of Sophistication",
+        "name": "Key of sophistication",
         "type": "sophisticated",
-        "description" : "Travail des yeux renforcé -type cut crease- / contouring",
+        "description" : "Un maquillage structuré et raffiné, avec un travail des yeux approfondi (cut crease, dégradés intenses) et un contouring précis. Parfait pour un look élégant, affirmé et très élaboré.",
         "time": "Entre 1h et 1h20",
-        "image": "https://i.pinimg.com/736x/0c/7f/10/0c7f10382b353120e161723ed5c71e84.jpg"
+        "image": "https://i.pinimg.com/736x/0c/7f/10/0c7f10382b353120e161723ed5c71e84.jpg",
+        "calendlyUrl": ""
     },
     {
         "id" : 4,
-        "name": "Key Artistic",
+        "name": "Key of artistry",
         "type": "artistic",
-        "description" : "Pour shooting",
+        "description" : "Un maquillage créatif et audacieux, pensé pour les shootings photo, projets artistiques ou événements spéciaux. Les couleurs, les textures et les formes sont travaillées pour un rendu unique et expressif.",
         "time": "Varie en fonction du modèle",
-        "image": "https://i.pinimg.com/736x/24/dd/cf/24ddcfb35b71329d4c7023cbd7aab309.jpg"
+        "image": "https://i.pinimg.com/736x/24/dd/cf/24ddcfb35b71329d4c7023cbd7aab309.jpg",
+        "calendlyUrl": "https://calendly.com/keyofbeauuty/key-of-artistry"
     },
     {
         "id" : 5,
-        "name": "Bridal Key Touch",
+        "name": "Key of bridal beauty",
         "type": "bridal",
-        "description" : "Maquillage mariée",
+        "description" : "Un maquillage de mariée sur-mesure, élégant et intemporel, conçu pour sublimer votre visage tout en résistant aux émotions et à la durée. Un rendu lumineux et harmonieux pour briller le jour J",
         "time": "Minimum 2h",
-        "image": "https://i.pinimg.com/736x/55/34/09/553409f33c9b89367c30402ecb676e3e.jpg"
+        "image": "https://i.pinimg.com/736x/55/34/09/553409f33c9b89367c30402ecb676e3e.jpg",
+        "calendlyUrl": "https://calendly.com/keyofbeauuty/key-of-bridal-beauty"
     }
 ]
