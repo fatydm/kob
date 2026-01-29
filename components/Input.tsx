@@ -28,8 +28,8 @@ export default function Input({
         onChange={onChange}
         placeholder={placeholder}
         className={`w-full bg-transparent border-b-2 border-gray-300 px-2 py-3 
-              text-[var(--foreground)] placeholder-[var(--text-light)]
-              focus:outline-none focus:border-[var(--accent)] 
+              text-(--foreground) placeholder-(--text-light)
+              focus:outline-none focus:border-(--accent)
               transition-colors duration-300 ${classes}`}
       />
     </label>
